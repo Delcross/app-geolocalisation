@@ -201,12 +201,17 @@ Exo4.defaultProps = {
   nbedock: 32,
   creditcard: "yes",
   geometry: {
-    coordinates: [2.275721, 48.865983],
+    coordinates: [<View>
+      <App>
+        position.coords.latitude,
+        position.coords.longitude
+      </App>
+    </View>],
   },
   record_timestamp: "2019-11-26T10:41:00.925000+00:00",
 };
 
-export class App extends React.Component {
+class App extends React.Component {
   constructor(){
     super();
     this.state = {

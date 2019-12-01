@@ -66,7 +66,6 @@ export const MapScreen = () => (
   <View style={styles.container}>
     <Text>Map</Text>
     <Exo4/>
-    <App/>
   </View>
 );
 

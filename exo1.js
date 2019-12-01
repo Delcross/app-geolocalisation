@@ -29,10 +29,10 @@ const FadeInView = (props) => {
 export default () => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <FadeInView style={{...styles.allBlock, ...styles.colorBlue}}>
+      <FadeInView style={{...styles.allBlock, ...styles.SecondBlock}}>
         <Text style={styles.allText}>Bloc 1</Text>
       </FadeInView>
-      <View style={styles.redBlock}>
+      <View style={styles.FirstBlock}>
         <Text style={styles.allText}>Test</Text>
       </View>
     </View>
@@ -40,14 +40,13 @@ export default () => {
 }
 
 const styles = StyleSheet.create({
-  redBlock: {
+  firstBlock: {
     flex: 1,
-    backgroundColor: 'red',
+    backgroundColor: 'blue',
     width: '100%'
   },
   allText: {
     color: 'white',
-    fontSize: 28,
     textAlign: 'center',
     margin: 10
   },
@@ -55,7 +54,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '50%'
   },
-  colorBlue: {
-    backgroundColor: 'grey'
+  SecondBlock: {
+    backgroundColor: 'purple'
   }
 })

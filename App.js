@@ -201,7 +201,7 @@ Exo4.defaultProps = {
   nbedock: 32,
   creditcard: "yes",
   geometry: {
-    coordinates: [position.coords.latitude, position.coords.longitud],
+    coordinates: [2.275721, 48.865983],
   },
   record_timestamp: "2019-11-26T10:41:00.925000+00:00",
 };
